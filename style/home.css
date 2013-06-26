@@ -1,19 +1,27 @@
 body
  {
  	margin: auto;
- 	overflow:hidden;
  	font-family: Gill Sans MT;
+ }
+#colours
+ {
+ 	height:100%;
+ 	width:100%;
  }
 .tab
  {
- 	height:13%;
+ 	height:12.5%;
  	width:100%;
  }
 .violet
  {
- 	box-shadow:-15px 0px 50px 7px #82298D;
  	background-color: #82298D;
+ 	box-shadow:-15px 0px 50px 7px #82298D;
  }
+ .bottom-shadow
+  {
+	box-shadow:inset 0px -14px 10px -10px black;
+  }
  .indigo
  {
  	background-color: #4B0082;
@@ -44,21 +52,11 @@ body
  	background-color: #DC000A;
  	box-shadow:-15px 0px 50px 7px #DC000A;
  }
-#footer
- {
- 	position:absolute;
- 	height:9%;
- 	width:100%;
- 	bottom:0px;
- 	background-color:#CCCCCC;
- 	z-index:3;
- 	box-shadow:0px -5px 10px;
- }
 #circle
  {
  	position:absolute;
  	top:-200px;
- 	right:-300px;
+ 	right:-400px;
  	height:1400px;
  	width:1000px;
  	border-top-left-radius:700px;
@@ -77,7 +75,6 @@ body
 	display: table;
 	position:absolute;
 	overflow: hidden;
-	margin-left: 20px;
 }
 .vertical-align-two
 {
@@ -88,17 +85,44 @@ body
 }	
 .vertical-align-three
 {
+	margin-left: 20px;
 	#position: relative;
 	#top: -50%;
 	width:100%;
 }
+/************************************Main*************************************/
 #main
  {
- 	position:absolute;
- 	top:10px;
- 	right:10px;
- 	width:;
+ 	position: absolute;
+
+ 	width:100%;
  	height:100%;
  	text-align: right;
  	z-index:4;
+ 	background-color: blue;
+ }
+#main-head
+ {
+ 	float:right;
+ 	z-index:5;
+ }
+/*****************************************Footer***********************************/
+#footer
+ {
+ 	position:absolute;
+ 	height:12.5%;
+ 	width:100%;
+ 	bottom:0px;
+ 	background-color:#CCCCCC;
+ 	z-index:30;
+ }
+#footer-menu
+ {
+
+ }
+#ticker
+ {
+ 	background-color: #AAAAAA;
+ 	width:100%;
+ 	height:40%;
  }
